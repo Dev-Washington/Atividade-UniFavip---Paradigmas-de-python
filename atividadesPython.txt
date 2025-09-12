@@ -36,7 +36,8 @@ print("Essa é a media: ", media)
 5) Faça um Programa que converta metros para centímetros.
 
 
-metros = np.double(input("Digite o valor em metros: "))
+metros = input("Digite o valor em metros: ")
+metros = float(metros)
 centimetros = metros * 100
 print(metros, "metros equivalem a", centimetros, "centímetros")
 
