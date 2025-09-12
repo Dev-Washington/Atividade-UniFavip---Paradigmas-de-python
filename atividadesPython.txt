@@ -40,7 +40,7 @@ print(metros, "metros equivalem a", centimetros, "centímetros")
 6) Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
 
 raio = float(input("Digite o raio do círculo: "))
-area = math.pi * raio ** 2
+area = 3.14 * raio ** 2
 print("A área do círculo é:", area)
 
 ---------------------------------------------------------------------------------
