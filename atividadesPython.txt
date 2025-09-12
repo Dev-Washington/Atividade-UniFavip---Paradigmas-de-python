@@ -165,6 +165,7 @@ salario_bruto = valor_hora * horas_trabalhadas
 desconto_ir = 0.11 * salario_bruto       # Imposto de Renda 11%
 desconto_inss = 0.08 * salario_bruto     # INSS 8%
 desconto_sindicato = 0.05 * salario_bruto # Sindicato 5%
+salario_liquido = salario_bruto - desconto_ir - desconto_inss - desconto_sindicato
 
 print("\n+ Salário Bruto : R$ {:.2f}".format(salario_bruto))
 print("- IR (11%)      : R$ {:.2f}".format(desconto_ir))
