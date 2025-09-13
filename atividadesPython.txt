@@ -183,8 +183,8 @@ cobertura_por_litro = 3
 litros_por_lata = 18
 preco_lata = 80.0
 litros_necessarios = area / cobertura_por_litro
-latas_necessarias = math.ceil(litros_necessarios) / litros_por_lata  # ajustando para latas inteiras
-latas_necessarias = math.ceil(litros_necessarios / litros_por_lata)  # latas inteiras
+latas_necessarias = (litros_necessarios) / litros_por_lata  # ajustando para latas inteiras
+latas_necessarias = (litros_necessarios / litros_por_lata)  # latas inteiras
 preco_total = latas_necessarias * preco_lata
 print(f"Área a ser pintada: {area} m²")
 print(f"Latas de tinta necessárias: {latas_necessarias}")
@@ -207,16 +207,16 @@ preco_lata = 80.0
 litros_galao = 3.6
 preco_galao = 25.0
 litros_necessarios = area_com_folga / cobertura_por_litro
-latas_somente = math.ceil(litros_necessarios / litros_lata)
+latas_somente = (litros_necessarios / litros_lata)
 preco_latas_somente = latas_somente * preco_lata
 
-galoes_somente = math.ceil(litros_necessarios / litros_galao)
+galoes_somente = (litros_necessarios / litros_galao)
 preco_galoes_somente = galoes_somente * preco_galao
 
 
 latas_mistura = int(litros_necessarios // litros_lata)
 resto_litros = litros_necessarios - (latas_mistura * litros_lata)
-galoes_mistura = math.ceil(resto_litros / litros_galao)
+galoes_mistura = (resto_litros / litros_galao)
 preco_mistura = (latas_mistura * preco_lata) + (galoes_mistura * preco_galao)
 
 
